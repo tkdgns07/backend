@@ -1,8 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from core.views import extract_csv_data
+from core.chartDataAPI import extract_csv_data
+from core.optionPricingAPI import optionPricing
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("extract_csv_data/", extract_csv_data),  # API 엔드포인트
+    path("extract_csv_data/", extract_csv_data),
+    path("option_pricing/", optionPricing)
 ]
