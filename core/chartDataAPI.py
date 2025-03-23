@@ -7,7 +7,7 @@ def extract_csv_data(request):
     page = int(request.GET.get("page", 0))  # 페이지 번호 받기
 
     # CSV 파일 경로 설정 (동적으로 파일을 처리)
-    stock_file_path = f"core/data/{ticker}/{ticker}_Stocks.csv"
+    stock_file_path = f"core/data/{ticker}/{ticker}_REAL.csv"
     lstm1_file_path = f"core/data/{ticker}/{ticker}_LSTM1.csv"
     lstm2_file_path = f"core/data/{ticker}/{ticker}_LSTM2.csv"
     lstm3_file_path = f"core/data/{ticker}/{ticker}_LSTM3.csv"
